@@ -52,3 +52,14 @@ if (purchaser) {
   console.log("\nAdded purchase for Liam:", purchaser.purchases[purchaser.purchases.length - 1]);
 }
 
+// Step 5: Display Customer Information
+console.log("\n=== Customer Summary ===");
+customers.forEach((customer, index) => {
+  const purchaseCount = customer.purchases.length;
+  console.log(
+    `${index + 1}. ${customer.name} — Email: ${customer.email} — Purchases: ${purchaseCount}`
+  );
+});
+
+// console.log("\n=== Final Customer Objects ===");
+// console.log(JSON.stringify(customers, null, 2));
