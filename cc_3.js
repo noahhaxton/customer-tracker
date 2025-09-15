@@ -22,3 +22,18 @@ const customers = [
 
 console.log("=== Initial Customers ===");
 console.log(customers);
+
+// Step 3: Add and Remove Data
+// Add a new customer with .push()
+const newCustomer = {
+  name: "Sofia Nguyen",
+  email: "sofia.nguyen@example.com",
+  purchases: ["Standing Desk", "Keyboard Tray"],
+};
+customers.push(newCustomer);
+console.log("\nAdded new customer (push):", newCustomer);
+
+// Remove the first customer with .shift()
+const removedCustomer = customers.shift();
+console.log("\nRemoved first customer (shift):", removedCustomer);
+
